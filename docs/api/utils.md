@@ -36,8 +36,7 @@ let addUser = require("../../utils/addUser.js");
 调用示例：  
 
 ```js
-let res=await addUser.addUser.addMethod(this.data.
-userName,this.data.userAvatar,this.data.userID)
+let res=await addUser.addUser.addMethod(this.data.userName,this.data.userAvatar,this.data.userID)
 ```
 
 注意，必须使用 `await` 关键字，否则会报错。并且调用这个方法的函数必须是异步函数。例如：  
@@ -48,8 +47,7 @@ Page({
     //...
   },
   onLoad:async function (options) {
-    let res=await addUser.addUser.addMethod(this.data.
-userName,this.data.userAvatar,this.data.userID)
+    let res=await addUser.addUser.addMethod(this.data.userName,this.data.userAvatar,this.data.userID)
   },
   //...
 })
@@ -62,8 +60,7 @@ userName,this.data.userAvatar,this.data.userID)
 返回值是 `添加成功` 和 `添加失败` 两种 string 类型。也就是说：  
 
 ```js
-let res=await addUser.addUser.addMethod(this.data.
-userName,this.data.userAvatar,this.data.userID);
+let res=await addUser.addUser.addMethod(this.data.userName,this.data.userAvatar,this.data.userID);
 console.log(res)
 ```
 
@@ -192,8 +189,7 @@ let getArticle = require("../../utils/getArticle.js");
 以异步的形式调用，示例：  
 
 ```js
-let res = await getArticle.getArticle.
-getArticleMethod(this.data.id);
+let res = await getArticle.getArticle.getArticleMethod(this.data.id);
 ```
 
 ### 返回值
@@ -269,9 +265,7 @@ let addComment = require("../../utils/addComment.js");
 以异步的形式调用，示例：  
 
 ```js
-let res = await addComment.addComment.addMethod(this.
-data.id, this.data.userID, this.data.comment, this.
-data.commentUserName);
+let res = await addComment.addComment.addMethod(this.data.id, this.data.userID, this.data.comment, this.data.commentUserName);
 ```
 
 ### 返回值
@@ -307,9 +301,7 @@ let addCollect = require("../../utils/addCollect.js");
 以异步的形式调用，示例：  
 
 ```js
-let res = await addCollect.addCollect.addCollectMethod
-(this.data.id, this.data.userID, this.data.title,
- this.data.type);
+let res = await addCollect.addCollect.addCollectMethod(this.data.id, this.data.userID, this.data.title,this.data.type);
 ```
 
 ### 返回值
@@ -342,8 +334,7 @@ let getAim = require("../../utils/getAim.js");
 以异步的形式调用，示例：  
 
 ```js
-let res = await getAim.getAim.getAimMethod
-(this.data.userID);
+let res = await getAim.getAim.getAimMethod(this.data.userID);
 ```
 
 ### 返回值

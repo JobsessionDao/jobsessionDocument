@@ -68,9 +68,13 @@ date: 2022-10-06
 
 ## pull代码
 
-在你每次开始编写代码前，请先pull **master** 分支的代码。打开 GitHub Desktop，在上面的菜单栏中选择**Branch**，然后点击**Update from master**。  
+在你每次开始编写代码前，请先pull **master** 分支的代码。打开 GitHub Desktop，切换为 `master` 分支在上面的菜单栏中选择**Respository**，然后点击**pull**。  
 
-![3](https://jetzihan-img.oss-cn-beijing.aliyuncs.com/blog/20221007234942.png)
+![3](https://jetzihan-img.oss-cn-beijing.aliyuncs.com/blog/1665241416047.png)
+
+或者分支有更新时也会提醒。  
+
+![3](https://jetzihan-img.oss-cn-beijing.aliyuncs.com/blog/20221008230529.png)
 
 ## push代码
 

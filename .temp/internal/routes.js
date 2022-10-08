@@ -21,22 +21,6 @@ export const routes = [
     redirect: "/api/"
   },
   {
-    name: "v-4f93c1a2",
-    path: "/examples/disable-sidebar.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-4f93c1a2").then(next)
-    },
-  },
-  {
-    name: "v-6906316b",
-    path: "/api/utils.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-6906316b").then(next)
-    },
-  },
-  {
     name: "v-34768dcb",
     path: "/api/yuncunchu.html",
     component: GlobalLayout,
@@ -45,11 +29,11 @@ export const routes = [
     },
   },
   {
-    name: "v-02e3e07b",
-    path: "/guide/database.html",
+    name: "v-4f93c1a2",
+    path: "/examples/disable-sidebar.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-02e3e07b").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-4f93c1a2").then(next)
     },
   },
   {
@@ -69,11 +53,11 @@ export const routes = [
     },
   },
   {
-    name: "v-4fedf641",
-    path: "/guide/guifan.html",
+    name: "v-6906316b",
+    path: "/api/utils.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-4fedf641").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-6906316b").then(next)
     },
   },
   {
@@ -85,11 +69,27 @@ export const routes = [
     },
   },
   {
+    name: "v-02e3e07b",
+    path: "/guide/database.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-02e3e07b").then(next)
+    },
+  },
+  {
     name: "v-f10d8d6a",
     path: "/guide/git.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-f10d8d6a").then(next)
+    },
+  },
+  {
+    name: "v-4fedf641",
+    path: "/guide/guifan.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-4fedf641").then(next)
     },
   },
   {

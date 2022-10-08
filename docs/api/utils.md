@@ -206,7 +206,7 @@ res.data[0].articleTag // 文章标签
 //... 具体请查看云开发数据库
 ```
 
-## AddLike 添加点赞或插眼
+## addLike 添加点赞或插眼
 
 ### 声明
 

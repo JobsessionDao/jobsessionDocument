@@ -348,6 +348,38 @@ export const siteData = {
       }
     },
     {
+      "title": "云存储",
+      "frontmatter": {
+        "pageClass": "yuncunchu"
+      },
+      "regularPath": "/api/yuncunchu.html",
+      "relativePath": "api/yuncunchu.md",
+      "key": "v-34768dcb",
+      "path": "/api/yuncunchu.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "wx.cloud.uploadFile",
+          "slug": "wx-cloud-uploadfile",
+          "normalizedTitle": "wx.cloud.uploadfile",
+          "charIndex": 10
+        },
+        {
+          "level": 2,
+          "title": "wx.cloud.downloadFile",
+          "slug": "wx-cloud-downloadfile",
+          "normalizedTitle": "wx.cloud.downloadfile",
+          "charIndex": 310
+        }
+      ],
+      "headersStr": "wx.cloud.uploadFile wx.cloud.downloadFile",
+      "content": "# 云存储\n\n\n# wx.cloud.uploadFile\n\nwx.cloud.uploadFile 用于将用户小程序端的文件上传到云存储空间中。\n\nwx.cloud.uploadFile({\n  cloudPath: 'example.png', // 上传至云端的路径\n  filePath: '', // 小程序临时文件路径\n  success: res => {\n    // 返回文件 ID\n    console.log(res.fileID)\n  },\n  fail: console.error\n})\n\n\n上传成功后会获得文件唯一标识符，即文件 ID，后续操作都基于文件 ID 而不是 URL。\n\n\n# wx.cloud.downloadFile\n\nwx.cloud.downloadFile 用于将云存储空间中的文件下载到用户小程序端。\n\nwx.cloud.downloadFile({\n  fileID: 'cloud://xxx.png', // 文件 ID\n  success: res => {\n    // 返回临时文件路径\n    console.log(res.tempFilePath)\n  },\n  fail: console.error\n})\n",
+      "normalizedContent": "# 云存储\n\n\n# wx.cloud.uploadfile\n\nwx.cloud.uploadfile 用于将用户小程序端的文件上传到云存储空间中。\n\nwx.cloud.uploadfile({\n  cloudpath: 'example.png', // 上传至云端的路径\n  filepath: '', // 小程序临时文件路径\n  success: res => {\n    // 返回文件 id\n    console.log(res.fileid)\n  },\n  fail: console.error\n})\n\n\n上传成功后会获得文件唯一标识符，即文件 id，后续操作都基于文件 id 而不是 url。\n\n\n# wx.cloud.downloadfile\n\nwx.cloud.downloadfile 用于将云存储空间中的文件下载到用户小程序端。\n\nwx.cloud.downloadfile({\n  fileid: 'cloud://xxx.png', // 文件 id\n  success: res => {\n    // 返回临时文件路径\n    console.log(res.tempfilepath)\n  },\n  fail: console.error\n})\n",
+      "charsets": {
+        "cjk": true
+      }
+    },
+    {
       "title": "Disable Sidebar Example",
       "frontmatter": {
         "sidebar": false
@@ -399,38 +431,6 @@ export const siteData = {
       "charsets": {}
     },
     {
-      "title": "云存储",
-      "frontmatter": {
-        "pageClass": "yuncunchu"
-      },
-      "regularPath": "/api/yuncunchu.html",
-      "relativePath": "api/yuncunchu.md",
-      "key": "v-34768dcb",
-      "path": "/api/yuncunchu.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "wx.cloud.uploadFile",
-          "slug": "wx-cloud-uploadfile",
-          "normalizedTitle": "wx.cloud.uploadfile",
-          "charIndex": 10
-        },
-        {
-          "level": 2,
-          "title": "wx.cloud.downloadFile",
-          "slug": "wx-cloud-downloadfile",
-          "normalizedTitle": "wx.cloud.downloadfile",
-          "charIndex": 310
-        }
-      ],
-      "headersStr": "wx.cloud.uploadFile wx.cloud.downloadFile",
-      "content": "# 云存储\n\n\n# wx.cloud.uploadFile\n\nwx.cloud.uploadFile 用于将用户小程序端的文件上传到云存储空间中。\n\nwx.cloud.uploadFile({\n  cloudPath: 'example.png', // 上传至云端的路径\n  filePath: '', // 小程序临时文件路径\n  success: res => {\n    // 返回文件 ID\n    console.log(res.fileID)\n  },\n  fail: console.error\n})\n\n\n上传成功后会获得文件唯一标识符，即文件 ID，后续操作都基于文件 ID 而不是 URL。\n\n\n# wx.cloud.downloadFile\n\nwx.cloud.downloadFile 用于将云存储空间中的文件下载到用户小程序端。\n\nwx.cloud.downloadFile({\n  fileID: 'cloud://xxx.png', // 文件 ID\n  success: res => {\n    // 返回临时文件路径\n    console.log(res.tempFilePath)\n  },\n  fail: console.error\n})\n",
-      "normalizedContent": "# 云存储\n\n\n# wx.cloud.uploadfile\n\nwx.cloud.uploadfile 用于将用户小程序端的文件上传到云存储空间中。\n\nwx.cloud.uploadfile({\n  cloudpath: 'example.png', // 上传至云端的路径\n  filepath: '', // 小程序临时文件路径\n  success: res => {\n    // 返回文件 id\n    console.log(res.fileid)\n  },\n  fail: console.error\n})\n\n\n上传成功后会获得文件唯一标识符，即文件 id，后续操作都基于文件 id 而不是 url。\n\n\n# wx.cloud.downloadfile\n\nwx.cloud.downloadfile 用于将云存储空间中的文件下载到用户小程序端。\n\nwx.cloud.downloadfile({\n  fileid: 'cloud://xxx.png', // 文件 id\n  success: res => {\n    // 返回临时文件路径\n    console.log(res.tempfilepath)\n  },\n  fail: console.error\n})\n",
-      "charsets": {
-        "cjk": true
-      }
-    },
-    {
       "frontmatter": {
         "pageLayout": "PageLayout1"
       },
@@ -442,6 +442,130 @@ export const siteData = {
       "content": "",
       "normalizedContent": "",
       "charsets": {}
+    },
+    {
+      "title": "页面功能说明",
+      "frontmatter": {
+        "title": "页面功能说明",
+        "date": "2022-10-07T00:00:00.000Z"
+      },
+      "regularPath": "/guide/czh.html",
+      "relativePath": "guide/czh.md",
+      "key": "v-3bb9c22a",
+      "path": "/guide/czh.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "1.登录页面 @wcq",
+          "slug": "_1-登录页面-wcq",
+          "normalizedTitle": "1.登录页面 @wcq",
+          "charIndex": 36
+        },
+        {
+          "level": 2,
+          "title": "2.搜索页面 @wcq",
+          "slug": "_2-搜索页面-wcq",
+          "normalizedTitle": "2.搜索页面 @wcq",
+          "charIndex": 293
+        },
+        {
+          "level": 2,
+          "title": "3.我的页面 @wcq",
+          "slug": "_3-我的页面-wcq",
+          "normalizedTitle": "3.我的页面 @wcq",
+          "charIndex": 688
+        },
+        {
+          "level": 3,
+          "title": "头像",
+          "slug": "头像",
+          "normalizedTitle": "头像",
+          "charIndex": 65
+        },
+        {
+          "level": 3,
+          "title": "退出登录",
+          "slug": "退出登录",
+          "normalizedTitle": "退出登录",
+          "charIndex": 745
+        },
+        {
+          "level": 3,
+          "title": "经验、赞赏、收藏",
+          "slug": "经验、赞赏、收藏",
+          "normalizedTitle": "经验、赞赏、收藏",
+          "charIndex": 789
+        },
+        {
+          "level": 3,
+          "title": "四个模块",
+          "slug": "四个模块",
+          "normalizedTitle": "四个模块",
+          "charIndex": 1098
+        },
+        {
+          "level": 2,
+          "title": "4.经验页面 @wcy",
+          "slug": "_4-经验页面-wcy",
+          "normalizedTitle": "4.经验页面 @wcy",
+          "charIndex": 1157
+        },
+        {
+          "level": 2,
+          "title": "5.QA 页面 @wcy",
+          "slug": "_5-qa-页面-wcy",
+          "normalizedTitle": "5.qa 页面 @wcy",
+          "charIndex": 1252
+        },
+        {
+          "level": 2,
+          "title": "6.经验详情页面 @wcy",
+          "slug": "_6-经验详情页面-wcy",
+          "normalizedTitle": "6.经验详情页面 @wcy",
+          "charIndex": 1274
+        },
+        {
+          "level": 2,
+          "title": "7.问答详情页面 @wcy",
+          "slug": "_7-问答详情页面-wcy",
+          "normalizedTitle": "7.问答详情页面 @wcy",
+          "charIndex": 2317
+        },
+        {
+          "level": 2,
+          "title": "8.我的经验 @syf",
+          "slug": "_8-我的经验-syf",
+          "normalizedTitle": "8.我的经验 @syf",
+          "charIndex": 2359
+        },
+        {
+          "level": 2,
+          "title": "9.我的问答 @syf",
+          "slug": "_9-我的问答-syf",
+          "normalizedTitle": "9.我的问答 @syf",
+          "charIndex": 2992
+        },
+        {
+          "level": 2,
+          "title": "10.我的收藏 @syf",
+          "slug": "_10-我的收藏-syf",
+          "normalizedTitle": "10.我的收藏 @syf",
+          "charIndex": 3013
+        },
+        {
+          "level": 2,
+          "title": "11.我的目标页面 @sn",
+          "slug": "_11-我的目标页面-sn",
+          "normalizedTitle": "11.我的目标页面 @sn",
+          "charIndex": 3054
+        }
+      ],
+      "headersStr": "1.登录页面 @wcq 2.搜索页面 @wcq 3.我的页面 @wcq 头像 退出登录 经验、赞赏、收藏 四个模块 4.经验页面 @wcy 5.QA 页面 @wcy 6.经验详情页面 @wcy 7.问答详情页面 @wcy 8.我的经验 @syf 9.我的问答 @syf 10.我的收藏 @syf 11.我的目标页面 @sn",
+      "content": "# 页面功能说明\n\n> 带*代表暂时还无法实现，先实现其他的。\n\n\n# 1.登录页面 @wcq\n\n微信一键登录 API，获取用户的头像和昵称以及 openid 用于标识用户。\n\n参考链接\n\n*完成登陆后，向全局逻辑传递数据 App.js ，用于 我的 页面的数据。同时判断云开发数据库中是否以及存在这个用户的信息。if 存在，忽略；if 不存在，写入云数据库（userData）用户的信息。包含：\n\n{\n  userName:\"\",  // 用户昵称\n  userAvater:\"\",  // 用户头像链接\n  userID:\"\", // 用户唯一标识符（openid）\n}\n\n\n\n# 2.搜索页面 @wcq\n\n搜索框先写一个摆设。\n\n搜索结果参照 @wcy 写的内容卡片。但是要根据后台来的数据做判断，后台会返回这样的一些数据：\n\n[\n  {\n    articleID:\"\", // 文章的ID，用于唯一辨识文章\n    authorID:\"\",// 文章的作者ID\n    articleTitle:\"\", // 文章的标题\n    articleTag:\"\", // 文章tag中的内容\n    desc:\"\",// 文章的内容\n    time:\"\",// 文章发表的时间\n    type:1, // 文章类型，1：经验，2：问答\n    number:50, // 文章的点赞数或者是问答的回答数\n  },\n  // ... 其余数据\n]\n\n\n如果 type===1 渲染为蓝色卡片，如果 type===2 渲染为橙色卡片。提示使用 wx:if 实现。\n\n\n# 3.我的页面 @wcq\n\n\n# 头像\n\n获取登录页面传来 App.js 的数据，渲染在页面上头像和昵称。\n\n\n# 退出登录\n\n点击退出登陆后注销小程序账号，返回登录页面，详见：\n\n退出登录参考\n\n\n# 经验、赞赏、收藏\n\n*根据获取到的 App.js 中的用户 ID 到数据库查询用户的经验数、赞赏值、收藏数。经验数和赞赏不用做点击跳转，收藏需要，跳转到下面的我的收藏界面。(还没有数据库时先在 js 中模拟数据)，后台返回的一条用户数据如下：\n\n{\n  userName:\"\",  // 用户昵称\n  userAvater:\"\",  // 用户头像链接\n  userID:\"\", // 用户唯一标识符（openid）\n  expCre:100, // 用户的经验积分\n  likeCre:50, // 用户的赞赏值\n  collectNum:10, // 用户的收藏数\n  // ... 其他无关的字段\n}\n\n\n\n# 四个模块\n\n分别将四个模块保存为 4x 的图片，用 css 写成两行两列的格式，每张图上都要预留跳转的接口。\n\n\n# 4.经验页面 @wcy\n\n首先是后台数据库返回的所有经验贴子，要进行分页（触底加载更多）。\n\n触底加载参考\n\n右下角有一个 fix 的发布按钮，点击进入发布界面，发布按钮保持不动。\n\n\n# 5.QA 页面 @wcy\n\n同上。\n\n\n# 6.经验详情页面 @wcy\n\n整个页面作为复用页面，从上面的页面跳转来时，同时传入文章 ID 参数。利用这个参数来查询具体的文章内容。左下角的点赞按钮，数据库中的 number 字段自加 1.并且在经验页面点赞后，点赞者的经验值（expCre）+10.并在用户 CollectList 中添加文章的 ID\n\n文章数据库结构：\n\n[\n  {\n    articleID:\"\", // 文章的ID，用于唯一辨识文章\n    authorID:\"\",// 文章的作者ID\n    articleTitle:\"\", // 文章的标题\n    articleTag:\"\", // 文章tag中的内容\n    desc:\"\",// 文章的内容\n    time:\"\",// 文章发表的时间\n    type:1, // 文章类型，1：经验，2：问答\n    number:50, // 文章的点赞数或者是问答的回答数\n    commentList:[\n      \"qenh76feq72eguyguybw\",  // 评论的ID\n      \"38hwfuig723hiudnuihh\",\n      //...\n    ] // 评论\n    //...\n  },\n  // ... 其余数据\n]\n\n\n用户数据库结构：\n\n{\n  userName:\"\",  // 用户昵称\n  userAvater:\"\",  // 用户头像链接\n  userID:\"\", // 用户唯一标识符（openid）\n  expCre:100, // 用户的经验积分\n  likeCre:50, // 用户的赞赏值\n  collectNum:10, // 用户的收藏数\n  CollectList:[\n    \"wefrgthryj\",\n    \"wefwrrgeth\",\n    //...\n  ]\n  // ... 其他无关的字段\n}\n\n\n在文章下方有评论页面，通过文章的 ID 查询所有属于它的评论并显示。用户发表评论后，在评论数据库中新增一条评论数据，并更新文章的 commentList 列表。\n\n评论的字段：\n\n{\n  commentID:\"\",// 唯一标识\n  articleID:\"\",// 标记属于哪篇文章\n  userID:\"\",// 标记创建者\n  userName:\"\",// 标记创建者的姓名\n  time:\"\",// 标记创建时间\n  desc:\"\"// 评论的详细内容\n}\n\n\n\n# 7.问答详情页面 @wcy\n\n同上，不过问答左下角的按钮不加分但放入收藏。\n\n\n# 8.我的经验 @syf\n\n先从 App.js 中获取当前用户的 ID，再从数据库中查询当前用户的发表的文章(user 数据表中 CreateList 字段)，用户的信息：\n\n{\n  userName:\"\",  // 用户昵称\n  userAvater:\"\",  // 用户头像链接\n  userID:\"\", // 用户唯一标识符（openid）\n  expCre:100, // 用户的经验积分\n  likeCre:50, // 用户的赞赏值\n  collectNum:10, // 用户的收藏数\n  CollectList:[\n    \"wefrgthryj\",\n    \"wefwrrgeth\",\n    //...\n  ],\n  CreateList:[\n    {\n      articleID:\"dwgrgh\",\n      articleTitle:\"这是一个标题\",\n      type:1,\n    },\n    {\n      articleID:\"fewgrrg\",\n      articleTitle:\"这是一个标题\",\n      type:1,\n    },\n    {\n      articleID:\"effrgh\",\n      articleTitle:\"这是一个标题\",\n      type:1,\n    },\n    //...\n  ]\n  // ... 其他无关的字段\n}\n\n\n拿到字段值后通过列表渲染显示。\n\n\n# 9.我的问答 @syf\n\n同上。\n\n\n# 10.我的收藏 @syf\n\n同上，不过要根据 type 渲染不同的颜色。\n\n\n# 11.我的目标页面 @sn\n\n先从 App.js 中获取当前用户的 ID，再从数据库中查询当前用户的目标字段。\n\n{\n  userName:\"\",  // 用户昵称\n  userAvater:\"\",  // 用户头像链接\n  userID:\"\", // 用户唯一标识符（openid）\n  expCre:100, // 用户的经验积分\n  likeCre:50, // 用户的赞赏值\n  collectNum:10, // 用户的收藏数\n  aim:{\n    aimTitle:\"目标标题\",\n    aimDesc:\"目标描述\",\n    beginDate: 2022-10-11,\n    endDate:2024-10-11\n  }\n  // ... 其他无关的字段\n}\n\n\n实现倒计时，倒计时参考代码：\n\ncountDown: function () {\n        let that = this;\n\n        that.setData({\n            timer: setInterval(function () {\n\n                var lefttime = parseInt((-new Date(that.data.jssj.replace(/\n                -/g, \"/\")).getTime() + new Date().getTime()));\n\n                var d = parseInt(lefttime / 1000 / 3600 / 24); //天数\n                var h = parseInt(lefttime / 1000 / 3600 % 24); //小时\n                var m = parseInt(lefttime / 1000 / 60 % 60); //分钟\n                var s = parseInt(lefttime / 1000 % 60); //当前的秒\n\n                d < 10 ? d = \"0\" + d : d;\n                h < 10 ? h = \"0\" + h : h;\n                m < 10 ? m = \"0\" + m : m;\n                s < 10 ? s = \"0\" + s : s;\n\n                that.setData({\n                    qgdjs_jo: {\n                        day: d,\n                        hour: h,\n                        min: m,\n                        sec: s\n                    }\n                })\n            }, 1000)\n        })\n    },\n",
+      "normalizedContent": "# 页面功能说明\n\n> 带*代表暂时还无法实现，先实现其他的。\n\n\n# 1.登录页面 @wcq\n\n微信一键登录 api，获取用户的头像和昵称以及 openid 用于标识用户。\n\n参考链接\n\n*完成登陆后，向全局逻辑传递数据 app.js ，用于 我的 页面的数据。同时判断云开发数据库中是否以及存在这个用户的信息。if 存在，忽略；if 不存在，写入云数据库（userdata）用户的信息。包含：\n\n{\n  username:\"\",  // 用户昵称\n  useravater:\"\",  // 用户头像链接\n  userid:\"\", // 用户唯一标识符（openid）\n}\n\n\n\n# 2.搜索页面 @wcq\n\n搜索框先写一个摆设。\n\n搜索结果参照 @wcy 写的内容卡片。但是要根据后台来的数据做判断，后台会返回这样的一些数据：\n\n[\n  {\n    articleid:\"\", // 文章的id，用于唯一辨识文章\n    authorid:\"\",// 文章的作者id\n    articletitle:\"\", // 文章的标题\n    articletag:\"\", // 文章tag中的内容\n    desc:\"\",// 文章的内容\n    time:\"\",// 文章发表的时间\n    type:1, // 文章类型，1：经验，2：问答\n    number:50, // 文章的点赞数或者是问答的回答数\n  },\n  // ... 其余数据\n]\n\n\n如果 type===1 渲染为蓝色卡片，如果 type===2 渲染为橙色卡片。提示使用 wx:if 实现。\n\n\n# 3.我的页面 @wcq\n\n\n# 头像\n\n获取登录页面传来 app.js 的数据，渲染在页面上头像和昵称。\n\n\n# 退出登录\n\n点击退出登陆后注销小程序账号，返回登录页面，详见：\n\n退出登录参考\n\n\n# 经验、赞赏、收藏\n\n*根据获取到的 app.js 中的用户 id 到数据库查询用户的经验数、赞赏值、收藏数。经验数和赞赏不用做点击跳转，收藏需要，跳转到下面的我的收藏界面。(还没有数据库时先在 js 中模拟数据)，后台返回的一条用户数据如下：\n\n{\n  username:\"\",  // 用户昵称\n  useravater:\"\",  // 用户头像链接\n  userid:\"\", // 用户唯一标识符（openid）\n  expcre:100, // 用户的经验积分\n  likecre:50, // 用户的赞赏值\n  collectnum:10, // 用户的收藏数\n  // ... 其他无关的字段\n}\n\n\n\n# 四个模块\n\n分别将四个模块保存为 4x 的图片，用 css 写成两行两列的格式，每张图上都要预留跳转的接口。\n\n\n# 4.经验页面 @wcy\n\n首先是后台数据库返回的所有经验贴子，要进行分页（触底加载更多）。\n\n触底加载参考\n\n右下角有一个 fix 的发布按钮，点击进入发布界面，发布按钮保持不动。\n\n\n# 5.qa 页面 @wcy\n\n同上。\n\n\n# 6.经验详情页面 @wcy\n\n整个页面作为复用页面，从上面的页面跳转来时，同时传入文章 id 参数。利用这个参数来查询具体的文章内容。左下角的点赞按钮，数据库中的 number 字段自加 1.并且在经验页面点赞后，点赞者的经验值（expcre）+10.并在用户 collectlist 中添加文章的 id\n\n文章数据库结构：\n\n[\n  {\n    articleid:\"\", // 文章的id，用于唯一辨识文章\n    authorid:\"\",// 文章的作者id\n    articletitle:\"\", // 文章的标题\n    articletag:\"\", // 文章tag中的内容\n    desc:\"\",// 文章的内容\n    time:\"\",// 文章发表的时间\n    type:1, // 文章类型，1：经验，2：问答\n    number:50, // 文章的点赞数或者是问答的回答数\n    commentlist:[\n      \"qenh76feq72eguyguybw\",  // 评论的id\n      \"38hwfuig723hiudnuihh\",\n      //...\n    ] // 评论\n    //...\n  },\n  // ... 其余数据\n]\n\n\n用户数据库结构：\n\n{\n  username:\"\",  // 用户昵称\n  useravater:\"\",  // 用户头像链接\n  userid:\"\", // 用户唯一标识符（openid）\n  expcre:100, // 用户的经验积分\n  likecre:50, // 用户的赞赏值\n  collectnum:10, // 用户的收藏数\n  collectlist:[\n    \"wefrgthryj\",\n    \"wefwrrgeth\",\n    //...\n  ]\n  // ... 其他无关的字段\n}\n\n\n在文章下方有评论页面，通过文章的 id 查询所有属于它的评论并显示。用户发表评论后，在评论数据库中新增一条评论数据，并更新文章的 commentlist 列表。\n\n评论的字段：\n\n{\n  commentid:\"\",// 唯一标识\n  articleid:\"\",// 标记属于哪篇文章\n  userid:\"\",// 标记创建者\n  username:\"\",// 标记创建者的姓名\n  time:\"\",// 标记创建时间\n  desc:\"\"// 评论的详细内容\n}\n\n\n\n# 7.问答详情页面 @wcy\n\n同上，不过问答左下角的按钮不加分但放入收藏。\n\n\n# 8.我的经验 @syf\n\n先从 app.js 中获取当前用户的 id，再从数据库中查询当前用户的发表的文章(user 数据表中 createlist 字段)，用户的信息：\n\n{\n  username:\"\",  // 用户昵称\n  useravater:\"\",  // 用户头像链接\n  userid:\"\", // 用户唯一标识符（openid）\n  expcre:100, // 用户的经验积分\n  likecre:50, // 用户的赞赏值\n  collectnum:10, // 用户的收藏数\n  collectlist:[\n    \"wefrgthryj\",\n    \"wefwrrgeth\",\n    //...\n  ],\n  createlist:[\n    {\n      articleid:\"dwgrgh\",\n      articletitle:\"这是一个标题\",\n      type:1,\n    },\n    {\n      articleid:\"fewgrrg\",\n      articletitle:\"这是一个标题\",\n      type:1,\n    },\n    {\n      articleid:\"effrgh\",\n      articletitle:\"这是一个标题\",\n      type:1,\n    },\n    //...\n  ]\n  // ... 其他无关的字段\n}\n\n\n拿到字段值后通过列表渲染显示。\n\n\n# 9.我的问答 @syf\n\n同上。\n\n\n# 10.我的收藏 @syf\n\n同上，不过要根据 type 渲染不同的颜色。\n\n\n# 11.我的目标页面 @sn\n\n先从 app.js 中获取当前用户的 id，再从数据库中查询当前用户的目标字段。\n\n{\n  username:\"\",  // 用户昵称\n  useravater:\"\",  // 用户头像链接\n  userid:\"\", // 用户唯一标识符（openid）\n  expcre:100, // 用户的经验积分\n  likecre:50, // 用户的赞赏值\n  collectnum:10, // 用户的收藏数\n  aim:{\n    aimtitle:\"目标标题\",\n    aimdesc:\"目标描述\",\n    begindate: 2022-10-11,\n    enddate:2024-10-11\n  }\n  // ... 其他无关的字段\n}\n\n\n实现倒计时，倒计时参考代码：\n\ncountdown: function () {\n        let that = this;\n\n        that.setdata({\n            timer: setinterval(function () {\n\n                var lefttime = parseint((-new date(that.data.jssj.replace(/\n                -/g, \"/\")).gettime() + new date().gettime()));\n\n                var d = parseint(lefttime / 1000 / 3600 / 24); //天数\n                var h = parseint(lefttime / 1000 / 3600 % 24); //小时\n                var m = parseint(lefttime / 1000 / 60 % 60); //分钟\n                var s = parseint(lefttime / 1000 % 60); //当前的秒\n\n                d < 10 ? d = \"0\" + d : d;\n                h < 10 ? h = \"0\" + h : h;\n                m < 10 ? m = \"0\" + m : m;\n                s < 10 ? s = \"0\" + s : s;\n\n                that.setdata({\n                    qgdjs_jo: {\n                        day: d,\n                        hour: h,\n                        min: m,\n                        sec: s\n                    }\n                })\n            }, 1000)\n        })\n    },\n",
+      "charsets": {
+        "cjk": true
+      }
     },
     {
       "title": "数据库设计",
@@ -617,205 +741,6 @@ export const siteData = {
       }
     },
     {
-      "title": "页面功能说明",
-      "frontmatter": {
-        "title": "页面功能说明",
-        "date": "2022-10-07T00:00:00.000Z"
-      },
-      "regularPath": "/guide/czh.html",
-      "relativePath": "guide/czh.md",
-      "key": "v-3bb9c22a",
-      "path": "/guide/czh.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "1.登录页面 @wcq",
-          "slug": "_1-登录页面-wcq",
-          "normalizedTitle": "1.登录页面 @wcq",
-          "charIndex": 36
-        },
-        {
-          "level": 2,
-          "title": "2.搜索页面 @wcq",
-          "slug": "_2-搜索页面-wcq",
-          "normalizedTitle": "2.搜索页面 @wcq",
-          "charIndex": 293
-        },
-        {
-          "level": 2,
-          "title": "3.我的页面 @wcq",
-          "slug": "_3-我的页面-wcq",
-          "normalizedTitle": "3.我的页面 @wcq",
-          "charIndex": 688
-        },
-        {
-          "level": 3,
-          "title": "头像",
-          "slug": "头像",
-          "normalizedTitle": "头像",
-          "charIndex": 65
-        },
-        {
-          "level": 3,
-          "title": "退出登录",
-          "slug": "退出登录",
-          "normalizedTitle": "退出登录",
-          "charIndex": 745
-        },
-        {
-          "level": 3,
-          "title": "经验、赞赏、收藏",
-          "slug": "经验、赞赏、收藏",
-          "normalizedTitle": "经验、赞赏、收藏",
-          "charIndex": 789
-        },
-        {
-          "level": 3,
-          "title": "四个模块",
-          "slug": "四个模块",
-          "normalizedTitle": "四个模块",
-          "charIndex": 1098
-        },
-        {
-          "level": 2,
-          "title": "4.经验页面 @wcy",
-          "slug": "_4-经验页面-wcy",
-          "normalizedTitle": "4.经验页面 @wcy",
-          "charIndex": 1157
-        },
-        {
-          "level": 2,
-          "title": "5.QA 页面 @wcy",
-          "slug": "_5-qa-页面-wcy",
-          "normalizedTitle": "5.qa 页面 @wcy",
-          "charIndex": 1252
-        },
-        {
-          "level": 2,
-          "title": "6.经验详情页面 @wcy",
-          "slug": "_6-经验详情页面-wcy",
-          "normalizedTitle": "6.经验详情页面 @wcy",
-          "charIndex": 1274
-        },
-        {
-          "level": 2,
-          "title": "7.问答详情页面 @wcy",
-          "slug": "_7-问答详情页面-wcy",
-          "normalizedTitle": "7.问答详情页面 @wcy",
-          "charIndex": 2317
-        },
-        {
-          "level": 2,
-          "title": "8.我的经验 @syf",
-          "slug": "_8-我的经验-syf",
-          "normalizedTitle": "8.我的经验 @syf",
-          "charIndex": 2359
-        },
-        {
-          "level": 2,
-          "title": "9.我的问答 @syf",
-          "slug": "_9-我的问答-syf",
-          "normalizedTitle": "9.我的问答 @syf",
-          "charIndex": 2992
-        },
-        {
-          "level": 2,
-          "title": "10.我的收藏 @syf",
-          "slug": "_10-我的收藏-syf",
-          "normalizedTitle": "10.我的收藏 @syf",
-          "charIndex": 3013
-        },
-        {
-          "level": 2,
-          "title": "11.我的目标页面 @sn",
-          "slug": "_11-我的目标页面-sn",
-          "normalizedTitle": "11.我的目标页面 @sn",
-          "charIndex": 3054
-        }
-      ],
-      "headersStr": "1.登录页面 @wcq 2.搜索页面 @wcq 3.我的页面 @wcq 头像 退出登录 经验、赞赏、收藏 四个模块 4.经验页面 @wcy 5.QA 页面 @wcy 6.经验详情页面 @wcy 7.问答详情页面 @wcy 8.我的经验 @syf 9.我的问答 @syf 10.我的收藏 @syf 11.我的目标页面 @sn",
-      "content": "# 页面功能说明\n\n> 带*代表暂时还无法实现，先实现其他的。\n\n\n# 1.登录页面 @wcq\n\n微信一键登录 API，获取用户的头像和昵称以及 openid 用于标识用户。\n\n参考链接\n\n*完成登陆后，向全局逻辑传递数据 App.js ，用于 我的 页面的数据。同时判断云开发数据库中是否以及存在这个用户的信息。if 存在，忽略；if 不存在，写入云数据库（userData）用户的信息。包含：\n\n{\n  userName:\"\",  // 用户昵称\n  userAvater:\"\",  // 用户头像链接\n  userID:\"\", // 用户唯一标识符（openid）\n}\n\n\n\n# 2.搜索页面 @wcq\n\n搜索框先写一个摆设。\n\n搜索结果参照 @wcy 写的内容卡片。但是要根据后台来的数据做判断，后台会返回这样的一些数据：\n\n[\n  {\n    articleID:\"\", // 文章的ID，用于唯一辨识文章\n    authorID:\"\",// 文章的作者ID\n    articleTitle:\"\", // 文章的标题\n    articleTag:\"\", // 文章tag中的内容\n    desc:\"\",// 文章的内容\n    time:\"\",// 文章发表的时间\n    type:1, // 文章类型，1：经验，2：问答\n    number:50, // 文章的点赞数或者是问答的回答数\n  },\n  // ... 其余数据\n]\n\n\n如果 type===1 渲染为蓝色卡片，如果 type===2 渲染为橙色卡片。提示使用 wx:if 实现。\n\n\n# 3.我的页面 @wcq\n\n\n# 头像\n\n获取登录页面传来 App.js 的数据，渲染在页面上头像和昵称。\n\n\n# 退出登录\n\n点击退出登陆后注销小程序账号，返回登录页面，详见：\n\n退出登录参考\n\n\n# 经验、赞赏、收藏\n\n*根据获取到的 App.js 中的用户 ID 到数据库查询用户的经验数、赞赏值、收藏数。经验数和赞赏不用做点击跳转，收藏需要，跳转到下面的我的收藏界面。(还没有数据库时先在 js 中模拟数据)，后台返回的一条用户数据如下：\n\n{\n  userName:\"\",  // 用户昵称\n  userAvater:\"\",  // 用户头像链接\n  userID:\"\", // 用户唯一标识符（openid）\n  expCre:100, // 用户的经验积分\n  likeCre:50, // 用户的赞赏值\n  collectNum:10, // 用户的收藏数\n  // ... 其他无关的字段\n}\n\n\n\n# 四个模块\n\n分别将四个模块保存为 4x 的图片，用 css 写成两行两列的格式，每张图上都要预留跳转的接口。\n\n\n# 4.经验页面 @wcy\n\n首先是后台数据库返回的所有经验贴子，要进行分页（触底加载更多）。\n\n触底加载参考\n\n右下角有一个 fix 的发布按钮，点击进入发布界面，发布按钮保持不动。\n\n\n# 5.QA 页面 @wcy\n\n同上。\n\n\n# 6.经验详情页面 @wcy\n\n整个页面作为复用页面，从上面的页面跳转来时，同时传入文章 ID 参数。利用这个参数来查询具体的文章内容。左下角的点赞按钮，数据库中的 number 字段自加 1.并且在经验页面点赞后，点赞者的经验值（expCre）+10.并在用户 CollectList 中添加文章的 ID\n\n文章数据库结构：\n\n[\n  {\n    articleID:\"\", // 文章的ID，用于唯一辨识文章\n    authorID:\"\",// 文章的作者ID\n    articleTitle:\"\", // 文章的标题\n    articleTag:\"\", // 文章tag中的内容\n    desc:\"\",// 文章的内容\n    time:\"\",// 文章发表的时间\n    type:1, // 文章类型，1：经验，2：问答\n    number:50, // 文章的点赞数或者是问答的回答数\n    commentList:[\n      \"qenh76feq72eguyguybw\",  // 评论的ID\n      \"38hwfuig723hiudnuihh\",\n      //...\n    ] // 评论\n    //...\n  },\n  // ... 其余数据\n]\n\n\n用户数据库结构：\n\n{\n  userName:\"\",  // 用户昵称\n  userAvater:\"\",  // 用户头像链接\n  userID:\"\", // 用户唯一标识符（openid）\n  expCre:100, // 用户的经验积分\n  likeCre:50, // 用户的赞赏值\n  collectNum:10, // 用户的收藏数\n  CollectList:[\n    \"wefrgthryj\",\n    \"wefwrrgeth\",\n    //...\n  ]\n  // ... 其他无关的字段\n}\n\n\n在文章下方有评论页面，通过文章的 ID 查询所有属于它的评论并显示。用户发表评论后，在评论数据库中新增一条评论数据，并更新文章的 commentList 列表。\n\n评论的字段：\n\n{\n  commentID:\"\",// 唯一标识\n  articleID:\"\",// 标记属于哪篇文章\n  userID:\"\",// 标记创建者\n  userName:\"\",// 标记创建者的姓名\n  time:\"\",// 标记创建时间\n  desc:\"\"// 评论的详细内容\n}\n\n\n\n# 7.问答详情页面 @wcy\n\n同上，不过问答左下角的按钮不加分但放入收藏。\n\n\n# 8.我的经验 @syf\n\n先从 App.js 中获取当前用户的 ID，再从数据库中查询当前用户的发表的文章(user 数据表中 CreateList 字段)，用户的信息：\n\n{\n  userName:\"\",  // 用户昵称\n  userAvater:\"\",  // 用户头像链接\n  userID:\"\", // 用户唯一标识符（openid）\n  expCre:100, // 用户的经验积分\n  likeCre:50, // 用户的赞赏值\n  collectNum:10, // 用户的收藏数\n  CollectList:[\n    \"wefrgthryj\",\n    \"wefwrrgeth\",\n    //...\n  ],\n  CreateList:[\n    {\n      articleID:\"dwgrgh\",\n      articleTitle:\"这是一个标题\",\n      type:1,\n    },\n    {\n      articleID:\"fewgrrg\",\n      articleTitle:\"这是一个标题\",\n      type:1,\n    },\n    {\n      articleID:\"effrgh\",\n      articleTitle:\"这是一个标题\",\n      type:1,\n    },\n    //...\n  ]\n  // ... 其他无关的字段\n}\n\n\n拿到字段值后通过列表渲染显示。\n\n\n# 9.我的问答 @syf\n\n同上。\n\n\n# 10.我的收藏 @syf\n\n同上，不过要根据 type 渲染不同的颜色。\n\n\n# 11.我的目标页面 @sn\n\n先从 App.js 中获取当前用户的 ID，再从数据库中查询当前用户的目标字段。\n\n{\n  userName:\"\",  // 用户昵称\n  userAvater:\"\",  // 用户头像链接\n  userID:\"\", // 用户唯一标识符（openid）\n  expCre:100, // 用户的经验积分\n  likeCre:50, // 用户的赞赏值\n  collectNum:10, // 用户的收藏数\n  aim:{\n    aimTitle:\"目标标题\",\n    aimDesc:\"目标描述\",\n    beginDate: 2022-10-11,\n    endDate:2024-10-11\n  }\n  // ... 其他无关的字段\n}\n\n\n实现倒计时，倒计时参考代码：\n\ncountDown: function () {\n        let that = this;\n\n        that.setData({\n            timer: setInterval(function () {\n\n                var lefttime = parseInt((-new Date(that.data.jssj.replace(/\n                -/g, \"/\")).getTime() + new Date().getTime()));\n\n                var d = parseInt(lefttime / 1000 / 3600 / 24); //天数\n                var h = parseInt(lefttime / 1000 / 3600 % 24); //小时\n                var m = parseInt(lefttime / 1000 / 60 % 60); //分钟\n                var s = parseInt(lefttime / 1000 % 60); //当前的秒\n\n                d < 10 ? d = \"0\" + d : d;\n                h < 10 ? h = \"0\" + h : h;\n                m < 10 ? m = \"0\" + m : m;\n                s < 10 ? s = \"0\" + s : s;\n\n                that.setData({\n                    qgdjs_jo: {\n                        day: d,\n                        hour: h,\n                        min: m,\n                        sec: s\n                    }\n                })\n            }, 1000)\n        })\n    },\n",
-      "normalizedContent": "# 页面功能说明\n\n> 带*代表暂时还无法实现，先实现其他的。\n\n\n# 1.登录页面 @wcq\n\n微信一键登录 api，获取用户的头像和昵称以及 openid 用于标识用户。\n\n参考链接\n\n*完成登陆后，向全局逻辑传递数据 app.js ，用于 我的 页面的数据。同时判断云开发数据库中是否以及存在这个用户的信息。if 存在，忽略；if 不存在，写入云数据库（userdata）用户的信息。包含：\n\n{\n  username:\"\",  // 用户昵称\n  useravater:\"\",  // 用户头像链接\n  userid:\"\", // 用户唯一标识符（openid）\n}\n\n\n\n# 2.搜索页面 @wcq\n\n搜索框先写一个摆设。\n\n搜索结果参照 @wcy 写的内容卡片。但是要根据后台来的数据做判断，后台会返回这样的一些数据：\n\n[\n  {\n    articleid:\"\", // 文章的id，用于唯一辨识文章\n    authorid:\"\",// 文章的作者id\n    articletitle:\"\", // 文章的标题\n    articletag:\"\", // 文章tag中的内容\n    desc:\"\",// 文章的内容\n    time:\"\",// 文章发表的时间\n    type:1, // 文章类型，1：经验，2：问答\n    number:50, // 文章的点赞数或者是问答的回答数\n  },\n  // ... 其余数据\n]\n\n\n如果 type===1 渲染为蓝色卡片，如果 type===2 渲染为橙色卡片。提示使用 wx:if 实现。\n\n\n# 3.我的页面 @wcq\n\n\n# 头像\n\n获取登录页面传来 app.js 的数据，渲染在页面上头像和昵称。\n\n\n# 退出登录\n\n点击退出登陆后注销小程序账号，返回登录页面，详见：\n\n退出登录参考\n\n\n# 经验、赞赏、收藏\n\n*根据获取到的 app.js 中的用户 id 到数据库查询用户的经验数、赞赏值、收藏数。经验数和赞赏不用做点击跳转，收藏需要，跳转到下面的我的收藏界面。(还没有数据库时先在 js 中模拟数据)，后台返回的一条用户数据如下：\n\n{\n  username:\"\",  // 用户昵称\n  useravater:\"\",  // 用户头像链接\n  userid:\"\", // 用户唯一标识符（openid）\n  expcre:100, // 用户的经验积分\n  likecre:50, // 用户的赞赏值\n  collectnum:10, // 用户的收藏数\n  // ... 其他无关的字段\n}\n\n\n\n# 四个模块\n\n分别将四个模块保存为 4x 的图片，用 css 写成两行两列的格式，每张图上都要预留跳转的接口。\n\n\n# 4.经验页面 @wcy\n\n首先是后台数据库返回的所有经验贴子，要进行分页（触底加载更多）。\n\n触底加载参考\n\n右下角有一个 fix 的发布按钮，点击进入发布界面，发布按钮保持不动。\n\n\n# 5.qa 页面 @wcy\n\n同上。\n\n\n# 6.经验详情页面 @wcy\n\n整个页面作为复用页面，从上面的页面跳转来时，同时传入文章 id 参数。利用这个参数来查询具体的文章内容。左下角的点赞按钮，数据库中的 number 字段自加 1.并且在经验页面点赞后，点赞者的经验值（expcre）+10.并在用户 collectlist 中添加文章的 id\n\n文章数据库结构：\n\n[\n  {\n    articleid:\"\", // 文章的id，用于唯一辨识文章\n    authorid:\"\",// 文章的作者id\n    articletitle:\"\", // 文章的标题\n    articletag:\"\", // 文章tag中的内容\n    desc:\"\",// 文章的内容\n    time:\"\",// 文章发表的时间\n    type:1, // 文章类型，1：经验，2：问答\n    number:50, // 文章的点赞数或者是问答的回答数\n    commentlist:[\n      \"qenh76feq72eguyguybw\",  // 评论的id\n      \"38hwfuig723hiudnuihh\",\n      //...\n    ] // 评论\n    //...\n  },\n  // ... 其余数据\n]\n\n\n用户数据库结构：\n\n{\n  username:\"\",  // 用户昵称\n  useravater:\"\",  // 用户头像链接\n  userid:\"\", // 用户唯一标识符（openid）\n  expcre:100, // 用户的经验积分\n  likecre:50, // 用户的赞赏值\n  collectnum:10, // 用户的收藏数\n  collectlist:[\n    \"wefrgthryj\",\n    \"wefwrrgeth\",\n    //...\n  ]\n  // ... 其他无关的字段\n}\n\n\n在文章下方有评论页面，通过文章的 id 查询所有属于它的评论并显示。用户发表评论后，在评论数据库中新增一条评论数据，并更新文章的 commentlist 列表。\n\n评论的字段：\n\n{\n  commentid:\"\",// 唯一标识\n  articleid:\"\",// 标记属于哪篇文章\n  userid:\"\",// 标记创建者\n  username:\"\",// 标记创建者的姓名\n  time:\"\",// 标记创建时间\n  desc:\"\"// 评论的详细内容\n}\n\n\n\n# 7.问答详情页面 @wcy\n\n同上，不过问答左下角的按钮不加分但放入收藏。\n\n\n# 8.我的经验 @syf\n\n先从 app.js 中获取当前用户的 id，再从数据库中查询当前用户的发表的文章(user 数据表中 createlist 字段)，用户的信息：\n\n{\n  username:\"\",  // 用户昵称\n  useravater:\"\",  // 用户头像链接\n  userid:\"\", // 用户唯一标识符（openid）\n  expcre:100, // 用户的经验积分\n  likecre:50, // 用户的赞赏值\n  collectnum:10, // 用户的收藏数\n  collectlist:[\n    \"wefrgthryj\",\n    \"wefwrrgeth\",\n    //...\n  ],\n  createlist:[\n    {\n      articleid:\"dwgrgh\",\n      articletitle:\"这是一个标题\",\n      type:1,\n    },\n    {\n      articleid:\"fewgrrg\",\n      articletitle:\"这是一个标题\",\n      type:1,\n    },\n    {\n      articleid:\"effrgh\",\n      articletitle:\"这是一个标题\",\n      type:1,\n    },\n    //...\n  ]\n  // ... 其他无关的字段\n}\n\n\n拿到字段值后通过列表渲染显示。\n\n\n# 9.我的问答 @syf\n\n同上。\n\n\n# 10.我的收藏 @syf\n\n同上，不过要根据 type 渲染不同的颜色。\n\n\n# 11.我的目标页面 @sn\n\n先从 app.js 中获取当前用户的 id，再从数据库中查询当前用户的目标字段。\n\n{\n  username:\"\",  // 用户昵称\n  useravater:\"\",  // 用户头像链接\n  userid:\"\", // 用户唯一标识符（openid）\n  expcre:100, // 用户的经验积分\n  likecre:50, // 用户的赞赏值\n  collectnum:10, // 用户的收藏数\n  aim:{\n    aimtitle:\"目标标题\",\n    aimdesc:\"目标描述\",\n    begindate: 2022-10-11,\n    enddate:2024-10-11\n  }\n  // ... 其他无关的字段\n}\n\n\n实现倒计时，倒计时参考代码：\n\ncountdown: function () {\n        let that = this;\n\n        that.setdata({\n            timer: setinterval(function () {\n\n                var lefttime = parseint((-new date(that.data.jssj.replace(/\n                -/g, \"/\")).gettime() + new date().gettime()));\n\n                var d = parseint(lefttime / 1000 / 3600 / 24); //天数\n                var h = parseint(lefttime / 1000 / 3600 % 24); //小时\n                var m = parseint(lefttime / 1000 / 60 % 60); //分钟\n                var s = parseint(lefttime / 1000 % 60); //当前的秒\n\n                d < 10 ? d = \"0\" + d : d;\n                h < 10 ? h = \"0\" + h : h;\n                m < 10 ? m = \"0\" + m : m;\n                s < 10 ? s = \"0\" + s : s;\n\n                that.setdata({\n                    qgdjs_jo: {\n                        day: d,\n                        hour: h,\n                        min: m,\n                        sec: s\n                    }\n                })\n            }, 1000)\n        })\n    },\n",
-      "charsets": {
-        "cjk": true
-      }
-    },
-    {
-      "title": "github 协作",
-      "frontmatter": {
-        "title": "github 协作",
-        "date": "2022-10-06T00:00:00.000Z"
-      },
-      "regularPath": "/guide/git.html",
-      "relativePath": "guide/git.md",
-      "key": "v-f10d8d6a",
-      "path": "/guide/git.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "同意项目邀请",
-          "slug": "同意项目邀请",
-          "normalizedTitle": "同意项目邀请",
-          "charIndex": 52
-        },
-        {
-          "level": 2,
-          "title": "下载使用 GitHub Desktop",
-          "slug": "下载使用-github-desktop",
-          "normalizedTitle": "下载使用 github desktop",
-          "charIndex": 133
-        },
-        {
-          "level": 2,
-          "title": "克隆项目",
-          "slug": "克隆项目",
-          "normalizedTitle": "克隆项目",
-          "charIndex": 182
-        },
-        {
-          "level": 2,
-          "title": "不再在右上角的版本管理中进行版本控制",
-          "slug": "不再在右上角的版本管理中进行版本控制",
-          "normalizedTitle": "不再在右上角的版本管理中进行版本控制",
-          "charIndex": 380
-        },
-        {
-          "level": 2,
-          "title": "添加分支",
-          "slug": "添加分支",
-          "normalizedTitle": "添加分支",
-          "charIndex": 403
-        },
-        {
-          "level": 2,
-          "title": "pull代码",
-          "slug": "pull代码",
-          "normalizedTitle": "pull代码",
-          "charIndex": 542
-        },
-        {
-          "level": 2,
-          "title": "push代码",
-          "slug": "push代码",
-          "normalizedTitle": "push代码",
-          "charIndex": 668
-        },
-        {
-          "level": 2,
-          "title": "请求合并",
-          "slug": "请求合并",
-          "normalizedTitle": "请求合并",
-          "charIndex": 775
-        }
-      ],
-      "headersStr": "同意项目邀请 下载使用 GitHub Desktop 克隆项目 不再在右上角的版本管理中进行版本控制 添加分支 pull代码 push代码 请求合并",
-      "content": "# github 协作\n\n> 由于微信 git 存在的问题。所以使用 github 进行协作。\n\n\n# 同意项目邀请\n\n首先你需要加入项目，同意项目邀请。\n\n打开Github主页，在头像下拉栏找到消息通知。\n点击Join，即可加入。\n\n加入成功如图所示：\n\n\n\n# 下载使用 GitHub Desktop\n\n访问Github Desktop并安装到桌面。\n\n\n# 克隆项目\n\n不管你在之前的项目中有何更改，请在这里重新克隆项目。然后把你修改的代码贴过来。\n\n打开下载好的Github Desktop，点击选择File-clone。\n\n选择URL，填写仓库的地址。\n\n在仓库的主页进行获取。\n\n创建本地的空文件夹。\n\n\n\n然后点击克隆。\n克隆过程：\n\n克隆成功后在相应的文件夹可以找到源代码了。\n\n用微信开发工具打开这个项目即可。\n打开之后如图所示。\n\n\n\n# 不再在右上角的版本管理中进行版本控制\n\n\n# 添加分支\n\n在 GitHub Desktop 中，点击左上角的Current branch，然后点击New branch。\n\n\n\n在今后的编辑中，你将在这个分支中进行。\n\n\n\n选择你的分支，然后点击Publish branch。\n\n\n\n在仓库页面即可看到你的分支。\n\n\n\n\n# pull代码\n\n在你每次开始编写代码前，请先pull master 分支的代码。打开 GitHub Desktop，切换为 master 分支在上面的菜单栏中选择Respository，然后点击pull。\n\n\n\n或者分支有更新时也会提醒。\n\n\n\n\n# push代码\n\n在你每次完成代码编写后，请先push你的代码。打开 GitHub Desktop，填写你的提交信息，然后点击Commit to xxx(你的分支)。\n\n\n\n点击Push origin。\n\n\n\n\n# 请求合并\n\n\n仓库主页会提示你进行合并，点击合并即可。\n\n写一下评论，点击提交。\n\n下面即代表提交成功。\n\n提交完合成后，你可以告诉你的管理员。",
-      "normalizedContent": "# github 协作\n\n> 由于微信 git 存在的问题。所以使用 github 进行协作。\n\n\n# 同意项目邀请\n\n首先你需要加入项目，同意项目邀请。\n\n打开github主页，在头像下拉栏找到消息通知。\n点击join，即可加入。\n\n加入成功如图所示：\n\n\n\n# 下载使用 github desktop\n\n访问github desktop并安装到桌面。\n\n\n# 克隆项目\n\n不管你在之前的项目中有何更改，请在这里重新克隆项目。然后把你修改的代码贴过来。\n\n打开下载好的github desktop，点击选择file-clone。\n\n选择url，填写仓库的地址。\n\n在仓库的主页进行获取。\n\n创建本地的空文件夹。\n\n\n\n然后点击克隆。\n克隆过程：\n\n克隆成功后在相应的文件夹可以找到源代码了。\n\n用微信开发工具打开这个项目即可。\n打开之后如图所示。\n\n\n\n# 不再在右上角的版本管理中进行版本控制\n\n\n# 添加分支\n\n在 github desktop 中，点击左上角的current branch，然后点击new branch。\n\n\n\n在今后的编辑中，你将在这个分支中进行。\n\n\n\n选择你的分支，然后点击publish branch。\n\n\n\n在仓库页面即可看到你的分支。\n\n\n\n\n# pull代码\n\n在你每次开始编写代码前，请先pull master 分支的代码。打开 github desktop，切换为 master 分支在上面的菜单栏中选择respository，然后点击pull。\n\n\n\n或者分支有更新时也会提醒。\n\n\n\n\n# push代码\n\n在你每次完成代码编写后，请先push你的代码。打开 github desktop，填写你的提交信息，然后点击commit to xxx(你的分支)。\n\n\n\n点击push origin。\n\n\n\n\n# 请求合并\n\n\n仓库主页会提示你进行合并，点击合并即可。\n\n写一下评论，点击提交。\n\n下面即代表提交成功。\n\n提交完合成后，你可以告诉你的管理员。",
-      "charsets": {
-        "cjk": true
-      }
-    },
-    {
       "title": "云开发：数据库和云存储操作",
       "frontmatter": {
         "title": "云开发：数据库和云存储操作",
@@ -905,66 +830,87 @@ export const siteData = {
       }
     },
     {
-      "title": "代码规范",
-      "frontmatter": {},
-      "regularPath": "/guide/",
-      "relativePath": "guide/index.md",
-      "key": "v-11d2e8c4",
-      "path": "/guide/",
+      "title": "github 协作",
+      "frontmatter": {
+        "title": "github 协作",
+        "date": "2022-10-06T00:00:00.000Z"
+      },
+      "regularPath": "/guide/git.html",
+      "relativePath": "guide/git.md",
+      "key": "v-f10d8d6a",
+      "path": "/guide/git.html",
       "headers": [
         {
           "level": 2,
-          "title": "文档编写",
-          "slug": "文档编写",
-          "normalizedTitle": "文档编写",
-          "charIndex": 11
+          "title": "同意项目邀请",
+          "slug": "同意项目邀请",
+          "normalizedTitle": "同意项目邀请",
+          "charIndex": 52
         },
         {
           "level": 2,
-          "title": "尺寸规范",
-          "slug": "尺寸规范",
-          "normalizedTitle": "尺寸规范",
-          "charIndex": 185
+          "title": "下载使用 GitHub Desktop",
+          "slug": "下载使用-github-desktop",
+          "normalizedTitle": "下载使用 github desktop",
+          "charIndex": 133
         },
         {
           "level": 2,
-          "title": "定位",
-          "slug": "定位",
-          "normalizedTitle": "定位",
-          "charIndex": 270
+          "title": "克隆项目",
+          "slug": "克隆项目",
+          "normalizedTitle": "克隆项目",
+          "charIndex": 182
         },
         {
           "level": 2,
-          "title": "源代码托管",
-          "slug": "源代码托管",
-          "normalizedTitle": "源代码托管",
-          "charIndex": 372
+          "title": "不再在右上角的版本管理中进行版本控制",
+          "slug": "不再在右上角的版本管理中进行版本控制",
+          "normalizedTitle": "不再在右上角的版本管理中进行版本控制",
+          "charIndex": 380
         },
         {
           "level": 2,
-          "title": "注释",
-          "slug": "注释",
-          "normalizedTitle": "注释",
-          "charIndex": 422
+          "title": "添加分支",
+          "slug": "添加分支",
+          "normalizedTitle": "添加分支",
+          "charIndex": 403
+        },
+        {
+          "level": 2,
+          "title": "pull代码",
+          "slug": "pull代码",
+          "normalizedTitle": "pull代码",
+          "charIndex": 542
+        },
+        {
+          "level": 2,
+          "title": "push代码",
+          "slug": "push代码",
+          "normalizedTitle": "push代码",
+          "charIndex": 668
+        },
+        {
+          "level": 2,
+          "title": "请求合并",
+          "slug": "请求合并",
+          "normalizedTitle": "请求合并",
+          "charIndex": 775
         }
       ],
-      "headersStr": "文档编写 尺寸规范 定位 源代码托管 注释",
-      "content": "# 代码规范\n\n\n# 文档编写\n\n编写代码时，需要随时记录问题，在 [本项目共享文档] 文件夹中 姓名缩写.md ,用于记录下面的内容：\n\n1.查阅网络解决的问题，记录问题内容和解决方法\n2.页面的接口。所有列表渲染的数据都需要先使用 js 中的 data 进行模拟，将接口记录在文档中。\n\n文档使用 Markdown 语法编写，语法详见markdown 教程\n\n\n# 尺寸规范\n\n使用 rpx 作为 css 尺寸单位。页面必须在 iPhone X、iPhone 12 Pro、iPhone6 上均测试通过。\n可参考 codefun 生成的定位代码。\ncodefun 教程\n\n\n# 定位\n\n严格使用 css 规范进行定位，除开必须使用的形状、样式等静态物体，其余(例如卡片、按钮）禁止使用 fixed 或者 abosulute 布局。\n\n\n# 源代码托管\n\n在某一工作告一段落后，必须提交到远程 git 分支。\n微信 git 使用教程\n\n\n# 注释\n\n代码中复杂的地方需要有良好的注释。",
-      "normalizedContent": "# 代码规范\n\n\n# 文档编写\n\n编写代码时，需要随时记录问题，在 [本项目共享文档] 文件夹中 姓名缩写.md ,用于记录下面的内容：\n\n1.查阅网络解决的问题，记录问题内容和解决方法\n2.页面的接口。所有列表渲染的数据都需要先使用 js 中的 data 进行模拟，将接口记录在文档中。\n\n文档使用 markdown 语法编写，语法详见markdown 教程\n\n\n# 尺寸规范\n\n使用 rpx 作为 css 尺寸单位。页面必须在 iphone x、iphone 12 pro、iphone6 上均测试通过。\n可参考 codefun 生成的定位代码。\ncodefun 教程\n\n\n# 定位\n\n严格使用 css 规范进行定位，除开必须使用的形状、样式等静态物体，其余(例如卡片、按钮）禁止使用 fixed 或者 abosulute 布局。\n\n\n# 源代码托管\n\n在某一工作告一段落后，必须提交到远程 git 分支。\n微信 git 使用教程\n\n\n# 注释\n\n代码中复杂的地方需要有良好的注释。",
+      "headersStr": "同意项目邀请 下载使用 GitHub Desktop 克隆项目 不再在右上角的版本管理中进行版本控制 添加分支 pull代码 push代码 请求合并",
+      "content": "# github 协作\n\n> 由于微信 git 存在的问题。所以使用 github 进行协作。\n\n\n# 同意项目邀请\n\n首先你需要加入项目，同意项目邀请。\n\n打开Github主页，在头像下拉栏找到消息通知。\n点击Join，即可加入。\n\n加入成功如图所示：\n\n\n\n# 下载使用 GitHub Desktop\n\n访问Github Desktop并安装到桌面。\n\n\n# 克隆项目\n\n不管你在之前的项目中有何更改，请在这里重新克隆项目。然后把你修改的代码贴过来。\n\n打开下载好的Github Desktop，点击选择File-clone。\n\n选择URL，填写仓库的地址。\n\n在仓库的主页进行获取。\n\n创建本地的空文件夹。\n\n\n\n然后点击克隆。\n克隆过程：\n\n克隆成功后在相应的文件夹可以找到源代码了。\n\n用微信开发工具打开这个项目即可。\n打开之后如图所示。\n\n\n\n# 不再在右上角的版本管理中进行版本控制\n\n\n# 添加分支\n\n在 GitHub Desktop 中，点击左上角的Current branch，然后点击New branch。\n\n\n\n在今后的编辑中，你将在这个分支中进行。\n\n\n\n选择你的分支，然后点击Publish branch。\n\n\n\n在仓库页面即可看到你的分支。\n\n\n\n\n# pull代码\n\n在你每次开始编写代码前，请先pull master 分支的代码。打开 GitHub Desktop，切换为 master 分支在上面的菜单栏中选择Respository，然后点击pull。\n\n\n\n或者分支有更新时也会提醒。\n\n\n\n\n# push代码\n\n在你每次完成代码编写后，请先push你的代码。打开 GitHub Desktop，填写你的提交信息，然后点击Commit to xxx(你的分支)。\n\n\n\n点击Push origin。\n\n\n\n\n# 请求合并\n\n\n仓库主页会提示你进行合并，点击合并即可。\n\n写一下评论，点击提交。\n\n下面即代表提交成功。\n\n提交完合成后，你可以告诉你的管理员。",
+      "normalizedContent": "# github 协作\n\n> 由于微信 git 存在的问题。所以使用 github 进行协作。\n\n\n# 同意项目邀请\n\n首先你需要加入项目，同意项目邀请。\n\n打开github主页，在头像下拉栏找到消息通知。\n点击join，即可加入。\n\n加入成功如图所示：\n\n\n\n# 下载使用 github desktop\n\n访问github desktop并安装到桌面。\n\n\n# 克隆项目\n\n不管你在之前的项目中有何更改，请在这里重新克隆项目。然后把你修改的代码贴过来。\n\n打开下载好的github desktop，点击选择file-clone。\n\n选择url，填写仓库的地址。\n\n在仓库的主页进行获取。\n\n创建本地的空文件夹。\n\n\n\n然后点击克隆。\n克隆过程：\n\n克隆成功后在相应的文件夹可以找到源代码了。\n\n用微信开发工具打开这个项目即可。\n打开之后如图所示。\n\n\n\n# 不再在右上角的版本管理中进行版本控制\n\n\n# 添加分支\n\n在 github desktop 中，点击左上角的current branch，然后点击new branch。\n\n\n\n在今后的编辑中，你将在这个分支中进行。\n\n\n\n选择你的分支，然后点击publish branch。\n\n\n\n在仓库页面即可看到你的分支。\n\n\n\n\n# pull代码\n\n在你每次开始编写代码前，请先pull master 分支的代码。打开 github desktop，切换为 master 分支在上面的菜单栏中选择respository，然后点击pull。\n\n\n\n或者分支有更新时也会提醒。\n\n\n\n\n# push代码\n\n在你每次完成代码编写后，请先push你的代码。打开 github desktop，填写你的提交信息，然后点击commit to xxx(你的分支)。\n\n\n\n点击push origin。\n\n\n\n\n# 请求合并\n\n\n仓库主页会提示你进行合并，点击合并即可。\n\n写一下评论，点击提交。\n\n下面即代表提交成功。\n\n提交完合成后，你可以告诉你的管理员。",
       "charsets": {
         "cjk": true
       }
     },
     {
       "title": "代码规范",
-      "frontmatter": {
-        "title": "代码规范",
-        "date": "2022-10-10T00:00:00.000Z"
-      },
-      "regularPath": "/guide/guifan.html",
-      "relativePath": "guide/guifan.md",
-      "key": "v-4fedf641",
-      "path": "/guide/guifan.html",
+      "frontmatter": {},
+      "regularPath": "/guide/",
+      "relativePath": "guide/index.md",
+      "key": "v-11d2e8c4",
+      "path": "/guide/",
       "headers": [
         {
           "level": 2,
@@ -1022,6 +968,46 @@ export const siteData = {
       "headersStr": null,
       "content": "# 触底分页加载的实现\n\n实现触底加载，首先要在 js 文件的 data 中添加容器用于接收数据：\n\nPage({\n  data: {\n    //...\n    itemList: [],\n  },\n//...\n\n\n接着，创建一个函数用于调用数据库，将数据添加到 itemList 中：\n\nloadMethod: async function (aType) {\n    let old_data = this.data.itemList;\n    // console.log(old_data.length+\"  \"+count);\n    if (isAll) {\n        return \"到底了\";\n    } else {\n        return new Promise((resolve, reject) => {\n        articleList\n            .where({\n            type: aType,\n            })\n            .skip(this.data.itemList.length)\n            .get()\n            .then((res) => {\n            console.log(res.data);\n            console.log(old_data.concat(res.data).length);\n            if (old_data.concat(res.data).length===allLength){\n                isAll=true;\n            }\n            allLength=old_data.concat(res.data).length;\n            this.setData({\n                itemList:old_data.concat(res.data)\n            })\n            // resolve(old_data.concat(res.data.data));\n            });\n        });\n    }\n},\n\n\n在经验和问答页面已经写好，可以复制上面的代码。\n\n在页面顶部声明数据库，以及加载完成判定变量，缺一不可：\n\nlet count;\nlet db;\nlet articleList;\nlet allLength;\nlet isAll=false;\n\n\n然后在 onLoad 函数中调用一次：\n\nonLoad: async function (options) {\n    wx.cloud.init();\n    db = wx.cloud.database();\n    articleList = db.collection(\"articleList\");\n    count = await db.collection(\"articleList\").count();\n    this.loadMethod(1);\n},\n\n\n在触底 API 中再次调用：\n\nonReachBottom: async function () {\n    db = wx.cloud.database();\n    articleList = db.collection(\"articleList\");\n    count = await db.collection(\"articleList\").count();\n    await this.loadMethod(1);\n},\n\n\nloadMethod 接收一个参数，用于判断是加载经验还是问答。1 为经验，2 为问答。",
       "normalizedContent": "# 触底分页加载的实现\n\n实现触底加载，首先要在 js 文件的 data 中添加容器用于接收数据：\n\npage({\n  data: {\n    //...\n    itemlist: [],\n  },\n//...\n\n\n接着，创建一个函数用于调用数据库，将数据添加到 itemlist 中：\n\nloadmethod: async function (atype) {\n    let old_data = this.data.itemlist;\n    // console.log(old_data.length+\"  \"+count);\n    if (isall) {\n        return \"到底了\";\n    } else {\n        return new promise((resolve, reject) => {\n        articlelist\n            .where({\n            type: atype,\n            })\n            .skip(this.data.itemlist.length)\n            .get()\n            .then((res) => {\n            console.log(res.data);\n            console.log(old_data.concat(res.data).length);\n            if (old_data.concat(res.data).length===alllength){\n                isall=true;\n            }\n            alllength=old_data.concat(res.data).length;\n            this.setdata({\n                itemlist:old_data.concat(res.data)\n            })\n            // resolve(old_data.concat(res.data.data));\n            });\n        });\n    }\n},\n\n\n在经验和问答页面已经写好，可以复制上面的代码。\n\n在页面顶部声明数据库，以及加载完成判定变量，缺一不可：\n\nlet count;\nlet db;\nlet articlelist;\nlet alllength;\nlet isall=false;\n\n\n然后在 onload 函数中调用一次：\n\nonload: async function (options) {\n    wx.cloud.init();\n    db = wx.cloud.database();\n    articlelist = db.collection(\"articlelist\");\n    count = await db.collection(\"articlelist\").count();\n    this.loadmethod(1);\n},\n\n\n在触底 api 中再次调用：\n\nonreachbottom: async function () {\n    db = wx.cloud.database();\n    articlelist = db.collection(\"articlelist\");\n    count = await db.collection(\"articlelist\").count();\n    await this.loadmethod(1);\n},\n\n\nloadmethod 接收一个参数，用于判断是加载经验还是问答。1 为经验，2 为问答。",
+      "charsets": {
+        "cjk": true
+      }
+    },
+    {
+      "title": "实现页面的复用",
+      "frontmatter": {
+        "title": "实现页面的复用",
+        "date": "2022-10-06T00:00:00.000Z"
+      },
+      "regularPath": "/guide/yemianfuyong.html",
+      "relativePath": "guide/yemianfuyong.md",
+      "key": "v-d0dd5dea",
+      "path": "/guide/yemianfuyong.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "wx:for 列表携带数据",
+          "slug": "wx-for-列表携带数据",
+          "normalizedTitle": "wx:for 列表携带数据",
+          "charIndex": 45
+        },
+        {
+          "level": 2,
+          "title": "页面跳转携带数据",
+          "slug": "页面跳转携带数据",
+          "normalizedTitle": "页面跳转携带数据",
+          "charIndex": 309
+        },
+        {
+          "level": 2,
+          "title": "页面接收数据",
+          "slug": "页面接收数据",
+          "normalizedTitle": "页面接收数据",
+          "charIndex": 842
+        }
+      ],
+      "headersStr": "wx:for 列表携带数据 页面跳转携带数据 页面接收数据",
+      "content": "# 实现页面复用\n\n在经验贴展示页面需要跳转到详情页面，就需要对详情页进行复用。\n\n\n# wx:for 列表携带数据\n\n理论 在 wxml 中使用 data-xx 属性可以携带数据在 js 中可以通过 e.currentTarget.dataset.xx 获取到这个数据。\n\n即：\n\n<view wx:for=\"{{item._id}}\" wx:for-item=\"experience\"  wx:key=\"xxx\" data-item=\"{{item}}\">\n  <!-- ... -->\n</view>\n\n\n在 js 中可以通过 e.currentTarget.dataset.item 获取到这个数据。\n\n\n# 页面跳转携带数据\n\n在计算机网络中，使用 GET 方法传递数据是不安全的，因为数据会暴露在 URL 中。但是我们也可以通过这个来传递数据。\n\n理论 在跳转页面时，可以在 URL 中携带数据。\n\n即：\n\nwx.navigateTo({\n  url: '/pages/experienceDetail/experienceDetail?data=' + this.data\n})\n\n\n结合上面的理论，我们可以在跳转页面时，将 item 数据携带在 URL 中。\n\nPage({\n  data: {\n    // ...\n  },\n  onLoad: function (options) {\n    // ...\n  },\n  onShow: function () {\n    // ...\n  },\n  // ...\n  toDetail: function (e) {\n    let item = e.currentTarget.dataset.item\n    wx.navigateTo({\n      url: '/pages/detail/detail?item=' + JSON.stringify(item),\n    })\n  }\n})\n\n\n\n# 页面接收数据\n\n在 details 页面中，我们可以通过 options 获取到传递过来的数据。\n\nPage({\n  data: {\n    // ...\n  },\n  onLoad: function (options) {\n    let item = JSON.parse(options.item)\n    this.setData({\n      item: item\n    })\n  },\n  onShow: function () {\n    // ...\n  },\n  // ...\n})\n",
+      "normalizedContent": "# 实现页面复用\n\n在经验贴展示页面需要跳转到详情页面，就需要对详情页进行复用。\n\n\n# wx:for 列表携带数据\n\n理论 在 wxml 中使用 data-xx 属性可以携带数据在 js 中可以通过 e.currenttarget.dataset.xx 获取到这个数据。\n\n即：\n\n<view wx:for=\"{{item._id}}\" wx:for-item=\"experience\"  wx:key=\"xxx\" data-item=\"{{item}}\">\n  <!-- ... -->\n</view>\n\n\n在 js 中可以通过 e.currenttarget.dataset.item 获取到这个数据。\n\n\n# 页面跳转携带数据\n\n在计算机网络中，使用 get 方法传递数据是不安全的，因为数据会暴露在 url 中。但是我们也可以通过这个来传递数据。\n\n理论 在跳转页面时，可以在 url 中携带数据。\n\n即：\n\nwx.navigateto({\n  url: '/pages/experiencedetail/experiencedetail?data=' + this.data\n})\n\n\n结合上面的理论，我们可以在跳转页面时，将 item 数据携带在 url 中。\n\npage({\n  data: {\n    // ...\n  },\n  onload: function (options) {\n    // ...\n  },\n  onshow: function () {\n    // ...\n  },\n  // ...\n  todetail: function (e) {\n    let item = e.currenttarget.dataset.item\n    wx.navigateto({\n      url: '/pages/detail/detail?item=' + json.stringify(item),\n    })\n  }\n})\n\n\n\n# 页面接收数据\n\n在 details 页面中，我们可以通过 options 获取到传递过来的数据。\n\npage({\n  data: {\n    // ...\n  },\n  onload: function (options) {\n    let item = json.parse(options.item)\n    this.setdata({\n      item: item\n    })\n  },\n  onshow: function () {\n    // ...\n  },\n  // ...\n})\n",
       "charsets": {
         "cjk": true
       }
@@ -1263,6 +1249,60 @@ export const siteData = {
       }
     },
     {
+      "title": "代码规范",
+      "frontmatter": {
+        "title": "代码规范",
+        "date": "2022-10-10T00:00:00.000Z"
+      },
+      "regularPath": "/guide/guifan.html",
+      "relativePath": "guide/guifan.md",
+      "key": "v-4fedf641",
+      "path": "/guide/guifan.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "文档编写",
+          "slug": "文档编写",
+          "normalizedTitle": "文档编写",
+          "charIndex": 11
+        },
+        {
+          "level": 2,
+          "title": "尺寸规范",
+          "slug": "尺寸规范",
+          "normalizedTitle": "尺寸规范",
+          "charIndex": 185
+        },
+        {
+          "level": 2,
+          "title": "定位",
+          "slug": "定位",
+          "normalizedTitle": "定位",
+          "charIndex": 270
+        },
+        {
+          "level": 2,
+          "title": "源代码托管",
+          "slug": "源代码托管",
+          "normalizedTitle": "源代码托管",
+          "charIndex": 372
+        },
+        {
+          "level": 2,
+          "title": "注释",
+          "slug": "注释",
+          "normalizedTitle": "注释",
+          "charIndex": 422
+        }
+      ],
+      "headersStr": "文档编写 尺寸规范 定位 源代码托管 注释",
+      "content": "# 代码规范\n\n\n# 文档编写\n\n编写代码时，需要随时记录问题，在 [本项目共享文档] 文件夹中 姓名缩写.md ,用于记录下面的内容：\n\n1.查阅网络解决的问题，记录问题内容和解决方法\n2.页面的接口。所有列表渲染的数据都需要先使用 js 中的 data 进行模拟，将接口记录在文档中。\n\n文档使用 Markdown 语法编写，语法详见markdown 教程\n\n\n# 尺寸规范\n\n使用 rpx 作为 css 尺寸单位。页面必须在 iPhone X、iPhone 12 Pro、iPhone6 上均测试通过。\n可参考 codefun 生成的定位代码。\ncodefun 教程\n\n\n# 定位\n\n严格使用 css 规范进行定位，除开必须使用的形状、样式等静态物体，其余(例如卡片、按钮）禁止使用 fixed 或者 abosulute 布局。\n\n\n# 源代码托管\n\n在某一工作告一段落后，必须提交到远程 git 分支。\n微信 git 使用教程\n\n\n# 注释\n\n代码中复杂的地方需要有良好的注释。",
+      "normalizedContent": "# 代码规范\n\n\n# 文档编写\n\n编写代码时，需要随时记录问题，在 [本项目共享文档] 文件夹中 姓名缩写.md ,用于记录下面的内容：\n\n1.查阅网络解决的问题，记录问题内容和解决方法\n2.页面的接口。所有列表渲染的数据都需要先使用 js 中的 data 进行模拟，将接口记录在文档中。\n\n文档使用 markdown 语法编写，语法详见markdown 教程\n\n\n# 尺寸规范\n\n使用 rpx 作为 css 尺寸单位。页面必须在 iphone x、iphone 12 pro、iphone6 上均测试通过。\n可参考 codefun 生成的定位代码。\ncodefun 教程\n\n\n# 定位\n\n严格使用 css 规范进行定位，除开必须使用的形状、样式等静态物体，其余(例如卡片、按钮）禁止使用 fixed 或者 abosulute 布局。\n\n\n# 源代码托管\n\n在某一工作告一段落后，必须提交到远程 git 分支。\n微信 git 使用教程\n\n\n# 注释\n\n代码中复杂的地方需要有良好的注释。",
+      "charsets": {
+        "cjk": true
+      }
+    },
+    {
       "title": "Home",
       "frontmatter": {
         "home": true,
@@ -1278,39 +1318,6 @@ export const siteData = {
       "headersStr": null,
       "content": "职念 生涯社区技术文档\n\nBuild with vuepress\nJobsession © 2022 @czh",
       "normalizedContent": "职念 生涯社区技术文档\n\nbuild with vuepress\njobsession © 2022 @czh",
-      "charsets": {
-        "cjk": true
-      }
-    },
-    {
-      "title": "实现页面的复用",
-      "frontmatter": {
-        "title": "实现页面的复用",
-        "date": "2022-10-06T00:00:00.000Z"
-      },
-      "regularPath": "/guide/yemianfuyong.html",
-      "relativePath": "guide/yemianfuyong.md",
-      "key": "v-d0dd5dea",
-      "path": "/guide/yemianfuyong.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "wx:for 列表携带数据",
-          "slug": "wx-for-列表携带数据",
-          "normalizedTitle": "wx:for 列表携带数据",
-          "charIndex": 45
-        },
-        {
-          "level": 2,
-          "title": "页面跳转携带数据",
-          "slug": "页面跳转携带数据",
-          "normalizedTitle": "页面跳转携带数据",
-          "charIndex": 309
-        }
-      ],
-      "headersStr": "wx:for 列表携带数据 页面跳转携带数据",
-      "content": "# 实现页面复用\n\n在经验贴展示页面需要跳转到详情页面，就需要对详情页进行复用。\n\n\n# wx:for 列表携带数据\n\n理论 在 wxml 中使用 data-xx 属性可以携带数据在 js 中可以通过 e.currentTarget.dataset.xx 获取到这个数据。\n\n即：\n\n<view wx:for=\"{{item._id}}\" wx:for-item=\"experience\"  wx:key=\"xxx\" data-item=\"{{item}}\">\n  <!-- ... -->\n</view>\n\n\n在 js 中可以通过 e.currentTarget.dataset.item 获取到这个数据。\n\n\n# 页面跳转携带数据\n\n在计算机网络中，使用 GET 方法传递数据是不安全的，因为数据会暴露在 URL 中。但是我们也可以通过这个来传递数据。\n\n理论 在跳转页面时，可以在 URL 中携带数据。\n\n即：\n\nwx.navigateTo({\n  url: '/pages/experienceDetail/experienceDetail?item=' + JSON.stringify(item)\n})\n\n\nPage({\n  data: {\n    // ...\n  },\n  onLoad: function (options) {\n    // ...\n  },\n  onShow: function () {\n    // ...\n  },\n  // ...\n  toDetail: function (e) {\n    let item = e.currentTarget.dataset.item\n    wx.navigateTo({\n      url: '/pages/detail/detail?item=' + JSON.stringify(item),\n    })\n  }\n})\n",
-      "normalizedContent": "# 实现页面复用\n\n在经验贴展示页面需要跳转到详情页面，就需要对详情页进行复用。\n\n\n# wx:for 列表携带数据\n\n理论 在 wxml 中使用 data-xx 属性可以携带数据在 js 中可以通过 e.currenttarget.dataset.xx 获取到这个数据。\n\n即：\n\n<view wx:for=\"{{item._id}}\" wx:for-item=\"experience\"  wx:key=\"xxx\" data-item=\"{{item}}\">\n  <!-- ... -->\n</view>\n\n\n在 js 中可以通过 e.currenttarget.dataset.item 获取到这个数据。\n\n\n# 页面跳转携带数据\n\n在计算机网络中，使用 get 方法传递数据是不安全的，因为数据会暴露在 url 中。但是我们也可以通过这个来传递数据。\n\n理论 在跳转页面时，可以在 url 中携带数据。\n\n即：\n\nwx.navigateto({\n  url: '/pages/experiencedetail/experiencedetail?item=' + json.stringify(item)\n})\n\n\npage({\n  data: {\n    // ...\n  },\n  onload: function (options) {\n    // ...\n  },\n  onshow: function () {\n    // ...\n  },\n  // ...\n  todetail: function (e) {\n    let item = e.currenttarget.dataset.item\n    wx.navigateto({\n      url: '/pages/detail/detail?item=' + json.stringify(item),\n    })\n  }\n})\n",
       "charsets": {
         "cjk": true
       }

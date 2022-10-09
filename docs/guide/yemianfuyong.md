@@ -56,3 +56,25 @@ Page({
   }
 })
 ```
+
+## 页面接收数据
+
+在 `details` 页面中，我们可以通过 `options` 获取到传递过来的数据。  
+
+```js
+Page({
+  data: {
+    // ...
+  },
+  onLoad: function (options) {
+    let item = JSON.parse(options.item)
+    this.setData({
+      item: item
+    })
+  },
+  onShow: function () {
+    // ...
+  },
+  // ...
+})
+```

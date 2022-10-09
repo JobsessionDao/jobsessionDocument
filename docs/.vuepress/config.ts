@@ -24,6 +24,7 @@ export = defineConfig4CustomTheme<ThemeConfig>((ctx) => ({
             "/guide/databaseMethods",
             "/guide/git",
             "/guide/reachBottom",
+            "/guide/yemianfuyong",
           ],
         },
       ],
